@@ -1,5 +1,4 @@
 // JavaScript Document
-
 // 切换按钮部分颜色的显示，以向用户提示当前处于何种模式
 var modeType = 1;
 function switchModeColor() {
@@ -20,7 +19,6 @@ function switchModeColor() {
 		mode3Color.style.color="black";
 	}
 	switchMode(modeType);
-
 }
 
 // 切换模式
@@ -61,12 +59,12 @@ function checkWord() {
 	var yourWord = document.getElementById('your_input');
 	if (targetWord.value == yourWord.value) {
 		// 拼写正确情况下 清空输入框 并将输入框背景颜色改为 绿
-		yourWord.placeholder = "对咯！";
+		yourWord.placeholder = "- 对咯 -";
 		yourWord.style.backgroundColor = "#55bb8a";
 		readRandomLine();
 	} else {
 		// 拼写错误情况下 输入框加入提示 并将输入框背景颜色改为 红
-		yourWord.placeholder = "错啦！";
+		yourWord.placeholder = "- 错啦 -";
 		yourWord.style.backgroundColor = "#de1c31";
 	}
 	document.getElementById('your_input').value = "";
@@ -95,7 +93,6 @@ function readRandomLine() {
 		document.getElementById('text_annotation').innerHTML = lines[randomLine*2-1];
 	});
 }
-
 readRandomLine();
 
 // 获取按钮元素
