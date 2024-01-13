@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+/*按钮 去单词表*/
+.goList_btn {
+    width: 120px;
+    height: 30px;
+    margin: 2px;
+}
+/*卡片 对顺序的选择*/
+.targetCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*卡片 对模式的切换*/
+.actionCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}

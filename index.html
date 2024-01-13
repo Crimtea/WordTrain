@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>单词训练</title>
+<link rel="icon" href="/WordTrain/resources/image/Gotcha.svg">
+<style type="text/css">
+	@import"/WordTrain/resources/css/style.css";
+	@import"/WordTrain/resources/css/index.css";
+	.u_input {
+		type: text;
+		text-align: center;
+		width: 25px;
+		}
+</style>
+</head>
+<body>
+<div class="header">
+	<div class="main">单词训练</div>
+</div>
+<div class="root">
+	<div class="root_page" id="showLight">
+		<div class="page">
+			<div class="card targetCard"> 
+				<!--在此处div内写内容-->
+				<div>
+					第
+					<input class="u_input" id="start" value="1" oninput="value=value.replace(/[^\d]/g,'')">
+					~
+					<input class="u_input" id="end" value="20" oninput="value=value.replace(/[^\d]/g,'')">个
+				</div>
+			</div>
+			<div class="card">
+				<div align="center">
+					<div style="height: 80px;">
+
+						<input class="u_input" id="text_word" type="text" style="height: 65%; width: 95%; font-size: 45px; margin: 45px 0px; display: block;" align="center" disabled>
+
+						<input class="u_input" id="your_input" type="text" style="height: 65%; width: 95%; font-size: 45px; margin: 45px 0px; display: none;" align="center" placeholder="">
+					</div>
+					<p style="height: 140px; color: black;" id="text_annotation"></p>
+				</div>
+			</div>
+			<div class="card actionCard"> 
+				<!--在此处div内写内容-->
+				<div>
+
+					<button id="btn_switch" style="display: block;" onclick="switchModeColor()">
+						<span id="text_mode1" style="color: red;">全部显示</span>
+						/
+						<span id="text_mode2" style="color: black;">看词说意</span>
+						/
+						<span id="text_mode3" style="color: black;">单词拼写</span>
+					</button>
+				</div>
+			</div>
+			<div class="card actionCard"> 
+				<!--在此处div内写内容-->
+				<div>
+					<input type="button" id="btn_run" value="ENTER:下一个" onclick="clickBtn()" style="height: 50px">
+				</div>
+			</div>
+		   	<a href="./words.html">
+				<button class="goList_btn">查看单词表</button>
+			</a>
+		</div>
+	</div>
+	<div class="footer">
+		<div id="content" class="check"></div>
+	</div>
+</div>
+<script type="text/javascript" src="/WordTrain/resources/js/index.js"></script> 
+<script type="text/javascript" src="/WordTrain/resources/js/wordTrain.js"></script> 
+<script type="text/javascript" src="/WordTrain/resources/js/version.js"></script> 
+<script>
+	
+</script>
+</body>
+</html>
