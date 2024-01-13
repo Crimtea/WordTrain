@@ -1,5 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
+/*
+body结构说明：
+    - header(上横框)
+    - root
+        -- root_page
+            --- page(内容集)
+                ---- card(多个，单一内容项)
+        -- footer(下横框)
+*/
 html, body {
     height: 100%;
     padding: 0;
