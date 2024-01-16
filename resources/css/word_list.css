@@ -1,0 +1,24 @@
+table {
+    border-collapse: collapse;
+    width: 100%;  
+}
+th {
+    background: #f8f8f8;
+    color: black;
+}
+th, td {
+    padding: 5px 10px;  /* cellpadding=5 */
+    border: 1px solid #cccccc; 
+    text-align: left;
+    vertical-align: top;  
+}
+th:first-child, td:first-child {
+    text-align: center;
+    width: 7%;
+}
+th:nth-child(2), td:nth-child(2) {
+    width: 20%;
+}
+tr:nth-child(2n){
+    background: #f8f8f8;
+}
