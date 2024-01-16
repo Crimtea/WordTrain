@@ -15,20 +15,20 @@ th {
 th, td {
     /* cellpadding=5 */
     /* padding: 5px 10px; */
-    padding: 1% 1%;
+    padding: 5px 10px;
     border: 1px solid #cccccc; 
     text-align: left;
     vertical-align: top;  
 }
 th:first-child, td:first-child {
     text-align: center;
-    width: 7%;
+    width: 10%;
 }
 th:nth-child(2), td:nth-child(2) {
     width: 20%;
 }
 th:last-child, td:last-child {
-    width: 73%;
+    width: 70%;
 }
 tr:nth-child(2n){
     background: #f8f8f8;
