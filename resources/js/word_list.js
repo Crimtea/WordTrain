@@ -1,6 +1,6 @@
 // JavaScript Document
 // 读取a.txt文件的内容
-fetch('../../trainDict.txt')
+fetch('/WordTrain/trainDict.txt')
 .then(response => response.text())
 .then(data => {
 const lines = data.split('\n');  // 按行分割数据  
