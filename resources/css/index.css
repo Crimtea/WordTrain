@@ -1,21 +1,64 @@
-@charset "utf-8";
-/* CSS Document */
-/*按钮 去单词表*/
-.goList_btn {
-    width: 120px;
+.word_num_area {
+    text-align: center;
     height: 30px;
-    margin: 2px;
+    border-bottom: 1px dashed #999;
 }
-/*卡片 对顺序的选择*/
-.targetCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.num_area {
+    text-align: center;
+    width: 25px;
 }
-/*卡片 对模式的切换*/
-.actionCard {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: nowrap;
+.word_display {
+    margin-top: 50px;
+    border-bottom: 1px dashed #999;
+}
+.target_word,
+.your_word {
+    display: block;
+    font-size: 45px;
+    width: 95%;
+    height: 58px;
+    margin: 0 auto;
+    line-height: 58px;
+}
+.target_word {
+    text-align: center;
+    display: block;
+}
+.your_word {
+    text-align: center;
+    display: none;
+}
+.word_mean {
+    text-align: center;
+    display: block;
+    width: 75%;
+    height: 125px;
+    line-height: 25px;
+    margin: 30px auto 0;
+    -webkit-line-clamp: 5;
+}
+.word_control {
+    margin: 20px auto 0;
+    width: 230px;
+}
+.mode_switch,
+.next,
+.look_list {
+    display: block;
+    margin: 0 auto;
+    padding: 2px 5px;
+    width: 230px;
+    height: 30px;
+}
+.mode_1 {
+    color: red;
+}
+.next,
+.look_list {
+    float: left;
+    margin-top: 20px;
+    width: 110px;
+}
+.next {
+    margin-left: 10px;
 }

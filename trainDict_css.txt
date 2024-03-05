@@ -188,3 +188,7 @@ shadow
 影子，阴影
 placeholder
 占位符（用于文本提示）
+transition
+过渡
+transform
+改变

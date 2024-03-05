@@ -1,75 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>单词训练</title>
-	<link rel="icon" href="/WordTrain/resources/image/crimtea_data.svg">
-	<style type="text/css">
-		@import"/WordTrain/resources/css/style.css";
-		@import"/WordTrain/resources/css/index.css";
-		.u_input {
-			type: text;
-			text-align: center;
-			width: 25px;
-			}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单词训练</title>
+    <link rel="shortcut icon" href="resources/images/crimtea_data.svg" type="image/x-icon">
+    <link rel="stylesheet" href="resources/css/base.css">
+    <link rel="stylesheet" href="resources/css/index.css">
 </head>
 <body>
-	<div class="header">
-		<div class="main">单词训练</div>
-	</div>
-	<div class="root">
-		<div class="root_page">
-			<div class="page">
-				<div class="card targetCard"> 
-					<!--在此处div内写内容-->
-					<div>
-						第
-						<input class="u_input" id="start" value="1" oninput="value=value.replace(/[^\d]/g,'')">
-						~
-						<input class="u_input" id="end" value="20" oninput="value=value.replace(/[^\d]/g,'')">个
-					</div>
-				</div>
-				<div class="card">
-					<div align="center">
-						<div style="height: 80px;">
-							<input class="u_input" id="text_word" type="text" style="height: 65%; width: 95%; font-size: 45px; margin: 45px 0px; display: block;" align="center" disabled>
-
-							<input class="u_input" id="your_input" type="text" style="height: 65%; width: 95%; font-size: 45px; margin: 45px 0px; display: none;" align="center" placeholder="">
-						</div>
-						<p style="height: 140px; color: black;" id="text_annotation"></p>
-					</div>
-				</div>
-				<div class="card actionCard"> 
-					<!--在此处div内写内容-->
-					<div>
-						<button id="btn_switch" style="display: block;" onclick="switchModeColor()">
-							<span id="text_mode1" style="color: red;">全部显示</span>
-							/
-							<span id="text_mode2" style="color: black;">看词说意</span>
-							/
-							<span id="text_mode3" style="color: black;">单词拼写</span>
-						</button>
-					</div>
-				</div>
-				<div class="card actionCard"> 
-					<!--在此处div内写内容-->
-					<div>
-						<input type="button" id="btn_run" value="ENTER:下一个" onclick="clickBtn()" style="height: 50px">
-					</div>
-				</div>
-			   	<a href="./word_list.html">
-					<button class="goList_btn">查看单词表</button>
-				</a>
-			</div>
-		</div>
-		<div class="footer">
-			<div id="content" class="check"></div>
-		</div>
-	</div>
-	<script type="text/javascript" src="/WordTrain/resources/js/index.js"></script> 
-	<script type="text/javascript" src="/WordTrain/resources/js/version.js"></script> 
+    <!-- header -->
+    <div class="header">单词训练</div>
+    <!-- main -->
+    <div class="main">
+        <!-- main_content -->
+        <div class="main_content">
+            <div class="card word_train">
+                <div class="word_num_area">
+                    第
+                    <input id="start" class="num_area" type="text" value="1">
+                    ~
+                    <input id="end" class="num_area" type="text" value="20">
+                    个
+                </div>
+                <div class="word_display">
+                    <input id="text_word" class="target_word one_line" type="text" disabled value="word">
+                    <input id="your_input" class="your_word one_line" type="text">
+                    <p id="text_annotation" class="word_mean"></p>
+                </div>
+                <div class="word_control">
+                    <button class="mode_switch" onclick="switchModeColor()">
+                        <span id="text_mode1" class="mode_1">全部显示</span>
+                        /
+                        <span id="text_mode2" class="mode_2">看词说意</span>
+                        /
+                        <span id="text_mode3" class="mode_3">单词拼写</span>
+                    </button>
+                    <button class="look_list" onclick="window.open('page/word_list.html')">查看单词表</button>
+                    <button id="btn_run" class="next" onclick="clickBtn()">ENTER: 下一个</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div id="version" class="footer"></div>
+    <script src="resources/js/index.js"></script>
+    <script src="resources/js/version.js"></script>
 </body>
 </html>

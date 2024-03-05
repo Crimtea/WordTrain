@@ -1,10 +1,9 @@
-#word_table {
+.word_table {
     display: flex;
     justify-content: center;
 }
 table {
     border-collapse: collapse;
-    width: auto;
     margin: 0;
     padding: 0;
 }
@@ -13,8 +12,6 @@ th {
     color: black;
 }
 th, td {
-    /* cellpadding=5 */
-    /* padding: 5px 10px; */
     padding: 5px 10px;
     border: 1px solid #cccccc; 
     text-align: left;
